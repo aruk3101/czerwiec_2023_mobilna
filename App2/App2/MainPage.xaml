@@ -5,6 +5,35 @@
              Padding="20"
              Title="czcionki">
 
+    <StackLayout>
+        <Label Text="Właściwości czcionki"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="White"
+               BackgroundColor="#558B2F"/>
+
+        <Label x:Name="fontSizeLabel"
+               Text="Rozmiar: 0"
+               FontSize="Medium"
+               TextColor="Black"
+               HorizontalOptions="Start" />
+
+        <Slider x:Name="fontSizeSlider"
+                Minimum="0"
+                Maximum="40"
+                ValueChanged="OnSliderValueChanged"/>
+
+        <Label x:Name="quoteLabel"
+               Text="Dzień dobry"
+               FontSize="20"
+               TextColor="Black"/>
     
+        <Button Text=">>"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Clicked="OnButtonClicked"
+                TextColor="White"
+                BackgroundColor="#558B2F"/>
+    </StackLayout>
 
 </ContentPage>
